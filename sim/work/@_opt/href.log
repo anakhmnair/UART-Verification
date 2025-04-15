@@ -1,0 +1,19 @@
+BEGIN 3:uart_if:fast__2:work
+    ri_pad_i :  1:top:fast:work
+    wb_ack_o :  1:top:fast:work
+    dcd_pad_i :  1:top:fast:work
+    wb_rst_i :  1:top:fast:work
+    wb_sel_i :  1:top:fast:work
+    baud_o :  1:top:fast:work
+    wb_adr_i :  1:top:fast:work
+    int_o :  1:top:fast:work
+    wb_dat_i :  1:top:fast:work
+    rts_pad_o :  1:top:fast:work
+    wb_dat_o :  1:top:fast:work
+    cts_pad_i :  1:top:fast:work
+    wb_we_i :  1:top:fast:work
+    dtr_pad_o :  1:top:fast:work
+    wb_stb_i :  1:top:fast:work
+    dsr_pad_i :  1:top:fast:work
+    wb_cyc_i :  1:top:fast:work
+END 

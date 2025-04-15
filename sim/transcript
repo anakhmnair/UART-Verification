@@ -1,0 +1,128 @@
+# //  Questa Sim-64
+# //  Version 2024.1 win64 Feb  1 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# wave_file2.wlf opened as dataset "wave_file2"
+add wave -position insertpoint  \
+wave_file2:/top/in0/wb_dat_i
+add wave -position insertpoint  \
+wave_file2:/top/in0/wb_dat_o
+add wave -position insertpoint  \
+wave_file2:/top/in0/wb_adr_i
+add wave -position insertpoint  \
+wave_file2:/top/in1/wb_adr_i
+add wave -position insertpoint  \
+wave_file2:/top/in1/wb_dat_i
+# Note :: For PA Dataflow Coloring, directory path of debug database needs to be specified with option -pa_debugdir <dir_path>.
+add wave -position insertpoint  \
+wave_file2:/top/in1/wb_dat_o
+add wave -position insertpoint  \
+wave_file3:/top/in0/wb_adr_i
+add wave -position insertpoint  \
+wave_file3:/top/in0/wb_dat_i
+add wave -position insertpoint  \
+wave_file3:/top/in0/wb_dat_o
+add wave -position insertpoint  \
+wave_file3:/top/in1/wb_adr_i
+add wave -position insertpoint  \
+wave_file3:/top/in1/wb_dat_i
+add wave -position insertpoint  \
+wave_file3:/top/in1/wb_dat_o
+add wave -position insertpoint  \
+wave_file4:/top/in0/wb_adr_i
+add wave -position insertpoint  \
+wave_file4:/top/in0/wb_dat_i
+add wave -position insertpoint  \
+wave_file4:/top/in0/wb_dat_o
+add wave -position insertpoint  \
+wave_file4:/top/in1/wb_adr_i
+add wave -position insertpoint  \
+wave_file4:/top/in1/wb_dat_i
+add wave -position insertpoint  \
+wave_file4:/top/in1/wb_dat_o
+add wave -position insertpoint  \
+wave_file5:/top/in0/wb_adr_i
+add wave -position insertpoint  \
+wave_file5:/top/in0/wb_dat_i
+add wave -position insertpoint  \
+wave_file5:/top/in0/wb_dat_o
+add wave -position insertpoint  \
+wave_file5:/top/in1/wb_adr_i
+add wave -position insertpoint  \
+wave_file5:/top/in1/wb_dat_i
+add wave -position insertpoint  \
+wave_file5:/top/in1/wb_dat_o
+add wave -position insertpoint  \
+wave_file6:/top/in0/wb_adr_i
+add wave -position insertpoint  \
+wave_file6:/top/in0/wb_dat_i
+add wave -position insertpoint  \
+wave_file6:/top/in0/wb_dat_o
+add wave -position insertpoint  \
+wave_file6:/top/in1/wb_adr_i
+add wave -position insertpoint  \
+wave_file6:/top/in1/wb_dat_i
+add wave -position insertpoint  \
+wave_file6:/top/in1/wb_dat_o
+add wave -position insertpoint  \
+wave_file6:/top/DUV1/regs/iir
+add wave -position insertpoint  \
+wave_file6:/top/DUV1/regs/lsr
+add wave -position insertpoint  \
+wave_file7:/top/in0/wb_adr_i
+add wave -position insertpoint  \
+wave_file7:/top/in0/wb_dat_i
+add wave -position insertpoint  \
+wave_file7:/top/in0/wb_dat_o
+add wave -position insertpoint  \
+wave_file7:/top/in1/wb_adr_i
+add wave -position insertpoint  \
+wave_file7:/top/in1/wb_dat_i
+add wave -position insertpoint  \
+wave_file7:/top/in1/wb_dat_o
+add wave -position insertpoint  \
+wave_file8:/top/in0/wb_adr_i
+add wave -position insertpoint  \
+wave_file8:/top/in0/wb_dat_i
+add wave -position insertpoint  \
+wave_file8:/top/in0/wb_dat_o
+add wave -position insertpoint  \
+wave_file8:/top/in1/wb_adr_i
+add wave -position insertpoint  \
+wave_file8:/top/in1/wb_dat_i
+add wave -position insertpoint  \
+wave_file8:/top/in1/wb_dat_o
+add wave -position insertpoint  \
+wave_file9:/top/in0/wb_adr_i
+add wave -position insertpoint  \
+wave_file9:/top/in0/wb_dat_i
+add wave -position insertpoint  \
+wave_file9:/top/in0/wb_dat_o
+add wave -position insertpoint  \
+wave_file9:/top/in1/wb_adr_i
+add wave -position insertpoint  \
+wave_file9:/top/in1/wb_dat_i
+add wave -position insertpoint  \
+wave_file9:/top/in1/wb_dat_o
+add wave -position insertpoint  \
+wave_file10:/top/in0/wb_adr_i
+add wave -position insertpoint  \
+wave_file10:/top/in0/wb_dat_i
+add wave -position insertpoint  \
+wave_file10:/top/in0/wb_dat_o
+add wave -position insertpoint  \
+wave_file10:/top/in1/wb_adr_i
+add wave -position insertpoint  \
+wave_file10:/top/in1/wb_dat_i
+add wave -position insertpoint  \
+wave_file10:/top/in1/wb_dat_o

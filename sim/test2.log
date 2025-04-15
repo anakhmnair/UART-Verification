@@ -1,0 +1,1131 @@
+# vsim -cvgperinstance -vopt -voptargs="+acc" -coverage -sva -c -do " log -r /* ;coverage save -onexit mem_cov2;run -all; exit" -wlf wave_file2.wlf -l test2.log -sv_seed random work.top "+UVM_TESTNAME=full_duplex_test" 
+# Start time: 21:02:05 on Mar 16,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# Support of the MGLS_LICENSE_FILE and LM_LICENSE_FILE licensing environment variables will be discontinued starting with the 2025.1 release. Please update to using the SALT_LICENSE_SERVER variable.
+# Please contact Siemens EDA Customer Support (https://support.sw.siemens.com/) for assistance.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# //  Questa Sim-64
+# //  Version 2024.1 win64 Feb  1 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading sv_std.std
+# Loading work.uart_if(fast)
+# Loading mtiUvm.uvm_pkg(fast)
+# Loading work.uart_test_pkg(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.top(fast)
+# Loading work.uart_if(fast__2)
+# Loading work.uart_top(fast)
+# Loading work.uart_wb(fast)
+# Loading work.uart_regs(fast)
+# Loading work.uart_transmitter(fast)
+# Loading work.uart_tfifo(fast)
+# Loading work.raminfr(fast)
+# Loading work.uart_sync_flops(fast)
+# Loading work.uart_receiver(fast)
+# Loading work.uart_rfifo(fast)
+# Loading C:/questasim64_2024.1/uvm-1.1d\win64\uvm_dpi.dll
+# ** Warning: (vsim-8634) Code was not compiled with coverage options.
+# Sv_Seed = 4099785258
+#  log -r /* 
+# coverage save -onexit mem_cov2
+# run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# (top.DUV1) UART INFO: Data bus width is 8. No Debug interface.
+# 
+# (top.DUV1) UART INFO: Has baudrate output
+# 
+# (top.DUV2) UART INFO: Data bus width is 8. No Debug interface.
+# 
+# (top.DUV2) UART INFO: Has baudrate output
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test full_duplex_test...
+# ----------'{m_leaf_name:"m_uart_cfg[0]", m_inst_id:483, use_uvm_seeding:1, m_inst_count:485, __m_uvm_status_container:@uvm_status_container@1, vif:/top/in0, is_active:UVM_ACTIVE, type_name:"uart_agent_config", mon_rcvd_xtn_cnt:0, drv_data_sent_cnt:0, no_of_uart:2, has_scoreboard:1, has_v_seqr:1}----------
+# ----------'{m_leaf_name:"m_uart_cfg[1]", m_inst_id:485, use_uvm_seeding:1, m_inst_count:487, __m_uvm_status_container:@uvm_status_container@1, vif:/top/in1, is_active:UVM_ACTIVE, type_name:"uart_agent_config", mon_rcvd_xtn_cnt:0, drv_data_sent_cnt:0, no_of_uart:2, has_scoreboard:1, has_v_seqr:1}----------
+# drvh
+# 
+# 
+# 
+# 
+#  ----------'{m_leaf_name:"m_uart_cfg[0]", m_inst_id:483, use_uvm_seeding:1, m_inst_count:1068, __m_uvm_status_container:@uvm_status_container@1, vif:/top/in0, is_active:UVM_ACTIVE, type_name:"uart_agent_config", mon_rcvd_xtn_cnt:0, drv_data_sent_cnt:0, no_of_uart:2, has_scoreboard:1, has_v_seqr:1}----------
+# 
+# 
+# 
+# 
+# drvh
+# 
+# 
+# 
+# 
+#  ----------'{m_leaf_name:"m_uart_cfg[1]", m_inst_id:485, use_uvm_seeding:1, m_inst_count:1068, __m_uvm_status_container:@uvm_status_container@1, vif:/top/in1, is_active:UVM_ACTIVE, type_name:"uart_agent_config", mon_rcvd_xtn_cnt:0, drv_data_sent_cnt:0, no_of_uart:2, has_scoreboard:1, has_v_seqr:1}----------
+# 
+# 
+# 
+# 
+# UVM_INFO ../uart_agent/uart_driver.sv(57) @ 50000: uvm_test_top.uart_envh.agnth[0].drvh [S_DRV] printing from driver 
+#  ----------------------------------------------------------------------------------------
+# Name                           Type      Size  Value                                    
+# ----------------------------------------------------------------------------------------
+# req                            uart_xtn  -     @1090                                    
+#   begin_time                   time      64    50000                                    
+#   depth                        int       32    'd2                                      
+#   parent sequence (name)       string    3     fd1                                      
+#   parent sequence (full name)  string    41    uvm_test_top.uart_envh.agnth[0].seqrh.fd1
+#   sequencer                    string    37    uvm_test_top.uart_envh.agnth[0].seqrh    
+#   wb_dat_i                     integral  8     128                                      
+#   wb_addr_i                    integral  3     'd3                                      
+#   wb_we_i                      integral  1     1                                        
+#   LCR                          integral  8     'b0                                      
+#   MCR                          integral  8     'b0                                      
+#   MSR                          integral  8     'b0                                      
+#   LSR                          integral  8     'b0                                      
+#   FCR                          integral  8     'b0                                      
+#   IIR                          integral  8     'b0                                      
+#   IER                          integral  8     'b0                                      
+#   DLL                          integral  8     'd0                                      
+#   DLM                          integral  8     'd0                                      
+# ----------------------------------------------------------------------------------------
+# 
+# UVM_INFO ../uart_agent/uart_driver.sv(57) @ 100000: uvm_test_top.uart_envh.agnth[1].drvh [S_DRV] printing from driver 
+#  ----------------------------------------------------------------------------------------
+# Name                           Type      Size  Value                                    
+# ----------------------------------------------------------------------------------------
+# req                            uart_xtn  -     @1094                                    
+#   begin_time                   time      64    100000                                   
+#   depth                        int       32    'd2                                      
+#   parent sequence (name)       string    3     fd2                                      
+#   parent sequence (full name)  string    41    uvm_test_top.uart_envh.agnth[1].seqrh.fd2
+#   sequencer                    string    37    uvm_test_top.uart_envh.agnth[1].seqrh    
+#   wb_dat_i                     integral  8     128                                      
+#   wb_addr_i                    integral  3     'd3                                      
+#   wb_we_i                      integral  1     1                                        
+#   LCR                          integral  8     'b0                                      
+#   MCR                          integral  8     'b0                                      
+#   MSR                          integral  8     'b0                                      
+#   LSR                          integral  8     'b0                                      
+#   FCR                          integral  8     'b0                                      
+#   IIR                          integral  8     'b0                                      
+#   IER                          integral  8     'b0                                      
+#   DLL                          integral  8     'd0                                      
+#   DLM                          integral  8     'd0                                      
+# ----------------------------------------------------------------------------------------
+# 
+# UVM_INFO ../uart_agent/uart_monitor.sv(107) @ 130000: uvm_test_top.uart_envh.agnth[0].monh [mon] received data 
+#  ---------------------------------------
+# Name         Type      Size  Value     
+# ---------------------------------------
+# u_xtn        uart_xtn  -     @652      
+#   wb_dat_i   integral  8     128       
+#   wb_addr_i  integral  3     'd3       
+#   wb_we_i    integral  1     1         
+#   LCR        integral  8     'b10000000
+#   MCR        integral  8     'b0       
+#   MSR        integral  8     'b0       
+#   LSR        integral  8     'b0       
+#   FCR        integral  8     'b0       
+#   IIR        integral  8     'b0       
+#   IER        integral  8     'b0       
+#   DLL        integral  8     'd0       
+#   DLM        integral  8     'd0       
+# ---------------------------------------
+# 
+# 
+# 
+# 
+# 
+#  THIS IS FD1 STEP 1 
+# 
+# 
+# 
+# 
+# UVM_INFO ../uart_agent/uart_driver.sv(57) @ 130000: uvm_test_top.uart_envh.agnth[0].drvh [S_DRV] printing from driver 
+#  ----------------------------------------------------------------------------------------
+# Name                           Type      Size  Value                                    
+# ----------------------------------------------------------------------------------------
+# req                            uart_xtn  -     @1090                                    
+#   begin_time                   time      64    130000                                   
+#   end_time                     time      64    130000                                   
+#   depth                        int       32    'd2                                      
+#   parent sequence (name)       string    3     fd1                                      
+#   parent sequence (full name)  string    41    uvm_test_top.uart_envh.agnth[0].seqrh.fd1
+#   sequencer                    string    37    uvm_test_top.uart_envh.agnth[0].seqrh    
+#   wb_dat_i                     integral  8     'd0                                      
+#   wb_addr_i                    integral  3     'd1                                      
+#   wb_we_i                      integral  1     1                                        
+#   LCR                          integral  8     'b0                                      
+#   MCR                          integral  8     'b0                                      
+#   MSR                          integral  8     'b0                                      
+#   LSR                          integral  8     'b0                                      
+#   FCR                          integral  8     'b0                                      
+#   IIR                          integral  8     'b0                                      
+#   IER                          integral  8     'b0                                      
+#   DLL                          integral  8     'd0                                      
+#   DLM                          integral  8     'd0                                      
+# ----------------------------------------------------------------------------------------
+# 
+# UVM_INFO ../uart_agent/uart_monitor.sv(107) @ 210000: uvm_test_top.uart_envh.agnth[0].monh [mon] received data 
+#  ---------------------------------------
+# Name         Type      Size  Value     
+# ---------------------------------------
+# u_xtn        uart_xtn  -     @652      
+#   wb_dat_i   integral  8     'd0       
+#   wb_addr_i  integral  3     'd1       
+#   wb_we_i    integral  1     1         
+#   LCR        integral  8     'b10000000
+#   MCR        integral  8     'b0       
+#   MSR        integral  8     'b0       
+#   LSR        integral  8     'b0       
+#   FCR        integral  8     'b0       
+#   IIR        integral  8     'b0       
+#   IER        integral  8     'b0       
+#   DLL        integral  8     'd0       
+#   DLM        integral  8     'd0       
+# ---------------------------------------
+# 
+# 
+# 
+# 
+# 
+#  THIS IS FD1 STEP 2 
+# 
+# 
+# 
+# 
+# UVM_INFO ../uart_agent/uart_driver.sv(57) @ 210000: uvm_test_top.uart_envh.agnth[0].drvh [S_DRV] printing from driver 
+#  ----------------------------------------------------------------------------------------
+# Name                           Type      Size  Value                                    
+# ----------------------------------------------------------------------------------------
+# req                            uart_xtn  -     @1090                                    
+#   begin_time                   time      64    210000                                   
+#   end_time                     time      64    210000                                   
+#   depth                        int       32    'd2                                      
+#   parent sequence (name)       string    3     fd1                                      
+#   parent sequence (full name)  string    41    uvm_test_top.uart_envh.agnth[0].seqrh.fd1
+#   sequencer                    string    37    uvm_test_top.uart_envh.agnth[0].seqrh    
+#   wb_dat_i                     integral  8     'd54                                     
+#   wb_addr_i                    integral  3     'd0                                      
+#   wb_we_i                      integral  1     1                                        
+#   LCR                          integral  8     'b0                                      
+#   MCR                          integral  8     'b0                                      
+#   MSR                          integral  8     'b0                                      
+#   LSR                          integral  8     'b0                                      
+#   FCR                          integral  8     'b0                                      
+#   IIR                          integral  8     'b0                                      
+#   IER                          integral  8     'b0                                      
+#   DLL                          integral  8     'd0                                      
+#   DLM                          integral  8     'd0                                      
+# ----------------------------------------------------------------------------------------
+# 
+# UVM_INFO ../uart_agent/uart_monitor.sv(107) @ 260000: uvm_test_top.uart_envh.agnth[1].monh [mon] received data 
+#  ---------------------------------------
+# Name         Type      Size  Value     
+# ---------------------------------------
+# u_xtn        uart_xtn  -     @810      
+#   wb_dat_i   integral  8     128       
+#   wb_addr_i  integral  3     'd3       
+#   wb_we_i    integral  1     1         
+#   LCR        integral  8     'b10000000
+#   MCR        integral  8     'b0       
+#   MSR        integral  8     'b0       
+#   LSR        integral  8     'b0       
+#   FCR        integral  8     'b0       
+#   IIR        integral  8     'b0       
+#   IER        integral  8     'b0       
+#   DLL        integral  8     'd0       
+#   DLM        integral  8     'd0       
+# ---------------------------------------
+# 
+# 
+# 
+# 
+# 
+#  THIS IS STEP 1 
+# 
+# 
+# 
+# 
+# UVM_INFO ../uart_agent/uart_driver.sv(57) @ 260000: uvm_test_top.uart_envh.agnth[1].drvh [S_DRV] printing from driver 
+#  ----------------------------------------------------------------------------------------
+# Name                           Type      Size  Value                                    
+# ----------------------------------------------------------------------------------------
+# req                            uart_xtn  -     @1094                                    
+#   begin_time                   time      64    260000                                   
+#   end_time                     time      64    260000                                   
+#   depth                        int       32    'd2                                      
+#   parent sequence (name)       string    3     fd2                                      
+#   parent sequence (full name)  string    41    uvm_test_top.uart_envh.agnth[1].seqrh.fd2
+#   sequencer                    string    37    uvm_test_top.uart_envh.agnth[1].seqrh    
+#   wb_dat_i                     integral  8     'd0                                      
+#   wb_addr_i                    integral  3     'd1                                      
+#   wb_we_i                      integral  1     1                                        
+#   LCR                          integral  8     'b0                                      
+#   MCR                          integral  8     'b0                                      
+#   MSR                          integral  8     'b0                                      
+#   LSR                          integral  8     'b0                                      
+#   FCR                          integral  8     'b0                                      
+#   IIR                          integral  8     'b0                                      
+#   IER                          integral  8     'b0                                      
+#   DLL                          integral  8     'd0                                      
+#   DLM                          integral  8     'd0                                      
+# ----------------------------------------------------------------------------------------
+# 
+# UVM_INFO ../uart_agent/uart_monitor.sv(107) @ 290000: uvm_test_top.uart_envh.agnth[0].monh [mon] received data 
+#  ---------------------------------------
+# Name         Type      Size  Value     
+# ---------------------------------------
+# u_xtn        uart_xtn  -     @652      
+#   wb_dat_i   integral  8     'd54      
+#   wb_addr_i  integral  3     'd0       
+#   wb_we_i    integral  1     1         
+#   LCR        integral  8     'b10000000
+#   MCR        integral  8     'b0       
+#   MSR        integral  8     'b0       
+#   LSR        integral  8     'b0       
+#   FCR        integral  8     'b0       
+#   IIR        integral  8     'b0       
+#   IER        integral  8     'b0       
+#   DLL        integral  8     'd54      
+#   DLM        integral  8     'd0       
+# ---------------------------------------
+# 
+# 
+# 
+# 
+# 
+#  THIS IS FD1 STEP 3 
+# 
+# 
+# 
+# 
+# UVM_INFO ../uart_agent/uart_driver.sv(57) @ 290000: uvm_test_top.uart_envh.agnth[0].drvh [S_DRV] printing from driver 
+#  ----------------------------------------------------------------------------------------
+# Name                           Type      Size  Value                                    
+# ----------------------------------------------------------------------------------------
+# req                            uart_xtn  -     @1090                                    
+#   begin_time                   time      64    290000                                   
+#   end_time                     time      64    290000                                   
+#   depth                        int       32    'd2                                      
+#   parent sequence (name)       string    3     fd1                                      
+#   parent sequence (full name)  string    41    uvm_test_top.uart_envh.agnth[0].seqrh.fd1
+#   sequencer                    string    37    uvm_test_top.uart_envh.agnth[0].seqrh    
+#   wb_dat_i                     integral  8     'd3                                      
+#   wb_addr_i                    integral  3     'd3                                      
+#   wb_we_i                      integral  1     1                                        
+#   LCR                          integral  8     'b0                                      
+#   MCR                          integral  8     'b0                                      
+#   MSR                          integral  8     'b0                                      
+#   LSR                          integral  8     'b0                                      
+#   FCR                          integral  8     'b0                                      
+#   IIR                          integral  8     'b0                                      
+#   IER                          integral  8     'b0                                      
+#   DLL                          integral  8     'd0                                      
+#   DLM                          integral  8     'd0                                      
+# ----------------------------------------------------------------------------------------
+# 
+# UVM_INFO ../uart_agent/uart_monitor.sv(107) @ 370000: uvm_test_top.uart_envh.agnth[0].monh [mon] received data 
+#  ----------------------------------
+# Name         Type      Size  Value
+# ----------------------------------
+# u_xtn        uart_xtn  -     @652 
+#   wb_dat_i   integral  8     'd3  
+#   wb_addr_i  integral  3     'd3  
+#   wb_we_i    integral  1     1    
+#   LCR        integral  8     'b11 
+#   MCR        integral  8     'b0  
+#   MSR        integral  8     'b0  
+#   LSR        integral  8     'b0  
+#   FCR        integral  8     'b0  
+#   IIR        integral  8     'b0  
+#   IER        integral  8     'b0  
+#   DLL        integral  8     'd54 
+#   DLM        integral  8     'd0  
+# ----------------------------------
+# 
+# 
+# 
+# 
+# 
+#  THIS IS FD1 STEP 4 
+# 
+# 
+# 
+# 
+# UVM_INFO ../uart_agent/uart_driver.sv(57) @ 370000: uvm_test_top.uart_envh.agnth[0].drvh [S_DRV] printing from driver 
+#  ----------------------------------------------------------------------------------------
+# Name                           Type      Size  Value                                    
+# ----------------------------------------------------------------------------------------
+# req                            uart_xtn  -     @1090                                    
+#   begin_time                   time      64    370000                                   
+#   end_time                     time      64    370000                                   
+#   depth                        int       32    'd2                                      
+#   parent sequence (name)       string    3     fd1                                      
+#   parent sequence (full name)  string    41    uvm_test_top.uart_envh.agnth[0].seqrh.fd1
+#   sequencer                    string    37    uvm_test_top.uart_envh.agnth[0].seqrh    
+#   wb_dat_i                     integral  8     'd1                                      
+#   wb_addr_i                    integral  3     'd1                                      
+#   wb_we_i                      integral  1     1                                        
+#   LCR                          integral  8     'b0                                      
+#   MCR                          integral  8     'b0                                      
+#   MSR                          integral  8     'b0                                      
+#   LSR                          integral  8     'b0                                      
+#   FCR                          integral  8     'b0                                      
+#   IIR                          integral  8     'b0                                      
+#   IER                          integral  8     'b0                                      
+#   DLL                          integral  8     'd0                                      
+#   DLM                          integral  8     'd0                                      
+# ----------------------------------------------------------------------------------------
+# 
+# UVM_INFO ../uart_agent/uart_monitor.sv(107) @ 420000: uvm_test_top.uart_envh.agnth[1].monh [mon] received data 
+#  ---------------------------------------
+# Name         Type      Size  Value     
+# ---------------------------------------
+# u_xtn        uart_xtn  -     @810      
+#   wb_dat_i   integral  8     'd0       
+#   wb_addr_i  integral  3     'd1       
+#   wb_we_i    integral  1     1         
+#   LCR        integral  8     'b10000000
+#   MCR        integral  8     'b0       
+#   MSR        integral  8     'b0       
+#   LSR        integral  8     'b0       
+#   FCR        integral  8     'b0       
+#   IIR        integral  8     'b0       
+#   IER        integral  8     'b0       
+#   DLL        integral  8     'd0       
+#   DLM        integral  8     'd0       
+# ---------------------------------------
+# 
+# 
+# 
+# 
+# 
+#  THIS IS STEP 2 
+# 
+# 
+# 
+# 
+# UVM_INFO ../uart_agent/uart_driver.sv(57) @ 420000: uvm_test_top.uart_envh.agnth[1].drvh [S_DRV] printing from driver 
+#  ----------------------------------------------------------------------------------------
+# Name                           Type      Size  Value                                    
+# ----------------------------------------------------------------------------------------
+# req                            uart_xtn  -     @1094                                    
+#   begin_time                   time      64    420000                                   
+#   end_time                     time      64    420000                                   
+#   depth                        int       32    'd2                                      
+#   parent sequence (name)       string    3     fd2                                      
+#   parent sequence (full name)  string    41    uvm_test_top.uart_envh.agnth[1].seqrh.fd2
+#   sequencer                    string    37    uvm_test_top.uart_envh.agnth[1].seqrh    
+#   wb_dat_i                     integral  8     'd27                                     
+#   wb_addr_i                    integral  3     'd0                                      
+#   wb_we_i                      integral  1     1                                        
+#   LCR                          integral  8     'b0                                      
+#   MCR                          integral  8     'b0                                      
+#   MSR                          integral  8     'b0                                      
+#   LSR                          integral  8     'b0                                      
+#   FCR                          integral  8     'b0                                      
+#   IIR                          integral  8     'b0                                      
+#   IER                          integral  8     'b0                                      
+#   DLL                          integral  8     'd0                                      
+#   DLM                          integral  8     'd0                                      
+# ----------------------------------------------------------------------------------------
+# 
+# UVM_INFO ../uart_agent/uart_monitor.sv(107) @ 450000: uvm_test_top.uart_envh.agnth[0].monh [mon] received data 
+#  ----------------------------------
+# Name         Type      Size  Value
+# ----------------------------------
+# u_xtn        uart_xtn  -     @652 
+#   wb_dat_i   integral  8     'd1  
+#   wb_addr_i  integral  3     'd1  
+#   wb_we_i    integral  1     1    
+#   LCR        integral  8     'b11 
+#   MCR        integral  8     'b0  
+#   MSR        integral  8     'b0  
+#   LSR        integral  8     'b0  
+#   FCR        integral  8     'b0  
+#   IIR        integral  8     'b0  
+#   IER        integral  8     'b1  
+#   DLL        integral  8     'd54 
+#   DLM        integral  8     'd0  
+# ----------------------------------
+# 
+# 
+# 
+# 
+# 
+#  THIS IS FD1 STEP 5 
+# 
+# 
+# 
+# 
+# UVM_INFO ../uart_agent/uart_driver.sv(57) @ 450000: uvm_test_top.uart_envh.agnth[0].drvh [S_DRV] printing from driver 
+#  ----------------------------------------------------------------------------------------
+# Name                           Type      Size  Value                                    
+# ----------------------------------------------------------------------------------------
+# req                            uart_xtn  -     @1090                                    
+#   begin_time                   time      64    450000                                   
+#   end_time                     time      64    450000                                   
+#   depth                        int       32    'd2                                      
+#   parent sequence (name)       string    3     fd1                                      
+#   parent sequence (full name)  string    41    uvm_test_top.uart_envh.agnth[0].seqrh.fd1
+#   sequencer                    string    37    uvm_test_top.uart_envh.agnth[0].seqrh    
+#   wb_dat_i                     integral  8     'd6                                      
+#   wb_addr_i                    integral  3     'd2                                      
+#   wb_we_i                      integral  1     1                                        
+#   LCR                          integral  8     'b0                                      
+#   MCR                          integral  8     'b0                                      
+#   MSR                          integral  8     'b0                                      
+#   LSR                          integral  8     'b0                                      
+#   FCR                          integral  8     'b0                                      
+#   IIR                          integral  8     'b0                                      
+#   IER                          integral  8     'b0                                      
+#   DLL                          integral  8     'd0                                      
+#   DLM                          integral  8     'd0                                      
+# ----------------------------------------------------------------------------------------
+# 
+# UVM_INFO ../uart_agent/uart_monitor.sv(107) @ 530000: uvm_test_top.uart_envh.agnth[0].monh [mon] received data 
+#  ----------------------------------
+# Name         Type      Size  Value
+# ----------------------------------
+# u_xtn        uart_xtn  -     @652 
+#   wb_dat_i   integral  8     'd6  
+#   wb_addr_i  integral  3     'd2  
+#   wb_we_i    integral  1     1    
+#   LCR        integral  8     'b11 
+#   MCR        integral  8     'b0  
+#   MSR        integral  8     'b0  
+#   LSR        integral  8     'b0  
+#   FCR        integral  8     'b110
+#   IIR        integral  8     'b0  
+#   IER        integral  8     'b1  
+#   DLL        integral  8     'd54 
+#   DLM        integral  8     'd0  
+# ----------------------------------
+# 
+# 
+# 
+# 
+# 
+#  THIS IS FD1 STEP 6 
+# 
+# 
+# 
+# 
+# UVM_INFO ../uart_agent/uart_driver.sv(57) @ 530000: uvm_test_top.uart_envh.agnth[0].drvh [S_DRV] printing from driver 
+#  ----------------------------------------------------------------------------------------
+# Name                           Type      Size  Value                                    
+# ----------------------------------------------------------------------------------------
+# req                            uart_xtn  -     @1090                                    
+#   begin_time                   time      64    530000                                   
+#   end_time                     time      64    530000                                   
+#   depth                        int       32    'd2                                      
+#   parent sequence (name)       string    3     fd1                                      
+#   parent sequence (full name)  string    41    uvm_test_top.uart_envh.agnth[0].seqrh.fd1
+#   sequencer                    string    37    uvm_test_top.uart_envh.agnth[0].seqrh    
+#   wb_dat_i                     integral  8     'd25                                     
+#   wb_addr_i                    integral  3     'd0                                      
+#   wb_we_i                      integral  1     1                                        
+#   LCR                          integral  8     'b0                                      
+#   MCR                          integral  8     'b0                                      
+#   MSR                          integral  8     'b0                                      
+#   LSR                          integral  8     'b0                                      
+#   FCR                          integral  8     'b0                                      
+#   IIR                          integral  8     'b0                                      
+#   IER                          integral  8     'b0                                      
+#   DLL                          integral  8     'd0                                      
+#   DLM                          integral  8     'd0                                      
+# ----------------------------------------------------------------------------------------
+# 
+# UVM_INFO ../uart_agent/uart_monitor.sv(107) @ 580000: uvm_test_top.uart_envh.agnth[1].monh [mon] received data 
+#  ---------------------------------------
+# Name         Type      Size  Value     
+# ---------------------------------------
+# u_xtn        uart_xtn  -     @810      
+#   wb_dat_i   integral  8     'd27      
+#   wb_addr_i  integral  3     'd0       
+#   wb_we_i    integral  1     1         
+#   LCR        integral  8     'b10000000
+#   MCR        integral  8     'b0       
+#   MSR        integral  8     'b0       
+#   LSR        integral  8     'b0       
+#   FCR        integral  8     'b0       
+#   IIR        integral  8     'b0       
+#   IER        integral  8     'b0       
+#   DLL        integral  8     'd27      
+#   DLM        integral  8     'd0       
+# ---------------------------------------
+# 
+# 
+# 
+# 
+# 
+#  THIS IS STEP 3 
+# 
+# 
+# 
+# 
+# UVM_INFO ../uart_agent/uart_driver.sv(57) @ 580000: uvm_test_top.uart_envh.agnth[1].drvh [S_DRV] printing from driver 
+#  ----------------------------------------------------------------------------------------
+# Name                           Type      Size  Value                                    
+# ----------------------------------------------------------------------------------------
+# req                            uart_xtn  -     @1094                                    
+#   begin_time                   time      64    580000                                   
+#   end_time                     time      64    580000                                   
+#   depth                        int       32    'd2                                      
+#   parent sequence (name)       string    3     fd2                                      
+#   parent sequence (full name)  string    41    uvm_test_top.uart_envh.agnth[1].seqrh.fd2
+#   sequencer                    string    37    uvm_test_top.uart_envh.agnth[1].seqrh    
+#   wb_dat_i                     integral  8     'd3                                      
+#   wb_addr_i                    integral  3     'd3                                      
+#   wb_we_i                      integral  1     1                                        
+#   LCR                          integral  8     'b0                                      
+#   MCR                          integral  8     'b0                                      
+#   MSR                          integral  8     'b0                                      
+#   LSR                          integral  8     'b0                                      
+#   FCR                          integral  8     'b0                                      
+#   IIR                          integral  8     'b0                                      
+#   IER                          integral  8     'b0                                      
+#   DLL                          integral  8     'd0                                      
+#   DLM                          integral  8     'd0                                      
+# ----------------------------------------------------------------------------------------
+# 
+# UVM_INFO ../uart_agent/uart_monitor.sv(107) @ 610000: uvm_test_top.uart_envh.agnth[0].monh [mon] received data 
+#  ----------------------------------
+# Name         Type      Size  Value
+# ----------------------------------
+# u_xtn        uart_xtn  -     @652 
+#   wb_dat_i   integral  8     'd25 
+#   wb_addr_i  integral  3     'd0  
+#   wb_we_i    integral  1     1    
+#   THR[0]     integral  8     'd25 
+#   LCR        integral  8     'b11 
+#   MCR        integral  8     'b0  
+#   MSR        integral  8     'b0  
+#   LSR        integral  8     'b0  
+#   FCR        integral  8     'b110
+#   IIR        integral  8     'b0  
+#   IER        integral  8     'b1  
+#   DLL        integral  8     'd54 
+#   DLM        integral  8     'd0  
+# ----------------------------------
+# 
+# 
+# 
+# 
+# 
+#  THIS IS FD1 STEP 7 
+# 
+# 
+# 
+# 
+# UVM_INFO ../uart_agent/uart_driver.sv(57) @ 610000: uvm_test_top.uart_envh.agnth[0].drvh [S_DRV] printing from driver 
+#  ----------------------------------------------------------------------------------------
+# Name                           Type      Size  Value                                    
+# ----------------------------------------------------------------------------------------
+# req                            uart_xtn  -     @1090                                    
+#   begin_time                   time      64    610000                                   
+#   end_time                     time      64    610000                                   
+#   depth                        int       32    'd2                                      
+#   parent sequence (name)       string    3     fd1                                      
+#   parent sequence (full name)  string    41    uvm_test_top.uart_envh.agnth[0].seqrh.fd1
+#   sequencer                    string    37    uvm_test_top.uart_envh.agnth[0].seqrh    
+#   wb_dat_i                     integral  8     234                                      
+#   wb_addr_i                    integral  3     'd2                                      
+#   wb_we_i                      integral  1     'd0                                      
+#   LCR                          integral  8     'b0                                      
+#   MCR                          integral  8     'b0                                      
+#   MSR                          integral  8     'b0                                      
+#   LSR                          integral  8     'b0                                      
+#   FCR                          integral  8     'b0                                      
+#   IIR                          integral  8     'b0                                      
+#   IER                          integral  8     'b0                                      
+#   DLL                          integral  8     'd0                                      
+#   DLM                          integral  8     'd0                                      
+# ----------------------------------------------------------------------------------------
+# 
+# UVM_INFO ../uart_agent/uart_monitor.sv(107) @ 740000: uvm_test_top.uart_envh.agnth[1].monh [mon] received data 
+#  ----------------------------------
+# Name         Type      Size  Value
+# ----------------------------------
+# u_xtn        uart_xtn  -     @810 
+#   wb_dat_i   integral  8     'd3  
+#   wb_addr_i  integral  3     'd3  
+#   wb_we_i    integral  1     1    
+#   LCR        integral  8     'b11 
+#   MCR        integral  8     'b0  
+#   MSR        integral  8     'b0  
+#   LSR        integral  8     'b0  
+#   FCR        integral  8     'b0  
+#   IIR        integral  8     'b0  
+#   IER        integral  8     'b0  
+#   DLL        integral  8     'd27 
+#   DLM        integral  8     'd0  
+# ----------------------------------
+# 
+# 
+# 
+# 
+# 
+#  THIS IS STEP 4 
+# 
+# 
+# 
+# 
+# UVM_INFO ../uart_agent/uart_driver.sv(57) @ 740000: uvm_test_top.uart_envh.agnth[1].drvh [S_DRV] printing from driver 
+#  ----------------------------------------------------------------------------------------
+# Name                           Type      Size  Value                                    
+# ----------------------------------------------------------------------------------------
+# req                            uart_xtn  -     @1094                                    
+#   begin_time                   time      64    740000                                   
+#   end_time                     time      64    740000                                   
+#   depth                        int       32    'd2                                      
+#   parent sequence (name)       string    3     fd2                                      
+#   parent sequence (full name)  string    41    uvm_test_top.uart_envh.agnth[1].seqrh.fd2
+#   sequencer                    string    37    uvm_test_top.uart_envh.agnth[1].seqrh    
+#   wb_dat_i                     integral  8     'd1                                      
+#   wb_addr_i                    integral  3     'd1                                      
+#   wb_we_i                      integral  1     1                                        
+#   LCR                          integral  8     'b0                                      
+#   MCR                          integral  8     'b0                                      
+#   MSR                          integral  8     'b0                                      
+#   LSR                          integral  8     'b0                                      
+#   FCR                          integral  8     'b0                                      
+#   IIR                          integral  8     'b0                                      
+#   IER                          integral  8     'b0                                      
+#   DLL                          integral  8     'd0                                      
+#   DLM                          integral  8     'd0                                      
+# ----------------------------------------------------------------------------------------
+# 
+# UVM_INFO ../uart_agent/uart_monitor.sv(107) @ 900000: uvm_test_top.uart_envh.agnth[1].monh [mon] received data 
+#  ----------------------------------
+# Name         Type      Size  Value
+# ----------------------------------
+# u_xtn        uart_xtn  -     @810 
+#   wb_dat_i   integral  8     'd1  
+#   wb_addr_i  integral  3     'd1  
+#   wb_we_i    integral  1     1    
+#   LCR        integral  8     'b11 
+#   MCR        integral  8     'b0  
+#   MSR        integral  8     'b0  
+#   LSR        integral  8     'b0  
+#   FCR        integral  8     'b0  
+#   IIR        integral  8     'b0  
+#   IER        integral  8     'b1  
+#   DLL        integral  8     'd27 
+#   DLM        integral  8     'd0  
+# ----------------------------------
+# 
+# 
+# 
+# 
+# 
+#  THIS IS STEP 5 
+# 
+# 
+# 
+# 
+# UVM_INFO ../uart_agent/uart_driver.sv(57) @ 900000: uvm_test_top.uart_envh.agnth[1].drvh [S_DRV] printing from driver 
+#  ----------------------------------------------------------------------------------------
+# Name                           Type      Size  Value                                    
+# ----------------------------------------------------------------------------------------
+# req                            uart_xtn  -     @1094                                    
+#   begin_time                   time      64    900000                                   
+#   end_time                     time      64    900000                                   
+#   depth                        int       32    'd2                                      
+#   parent sequence (name)       string    3     fd2                                      
+#   parent sequence (full name)  string    41    uvm_test_top.uart_envh.agnth[1].seqrh.fd2
+#   sequencer                    string    37    uvm_test_top.uart_envh.agnth[1].seqrh    
+#   wb_dat_i                     integral  8     'd6                                      
+#   wb_addr_i                    integral  3     'd2                                      
+#   wb_we_i                      integral  1     1                                        
+#   LCR                          integral  8     'b0                                      
+#   MCR                          integral  8     'b0                                      
+#   MSR                          integral  8     'b0                                      
+#   LSR                          integral  8     'b0                                      
+#   FCR                          integral  8     'b0                                      
+#   IIR                          integral  8     'b0                                      
+#   IER                          integral  8     'b0                                      
+#   DLL                          integral  8     'd0                                      
+#   DLM                          integral  8     'd0                                      
+# ----------------------------------------------------------------------------------------
+# 
+# UVM_INFO ../uart_agent/uart_monitor.sv(107) @ 1060000: uvm_test_top.uart_envh.agnth[1].monh [mon] received data 
+#  ----------------------------------
+# Name         Type      Size  Value
+# ----------------------------------
+# u_xtn        uart_xtn  -     @810 
+#   wb_dat_i   integral  8     'd6  
+#   wb_addr_i  integral  3     'd2  
+#   wb_we_i    integral  1     1    
+#   LCR        integral  8     'b11 
+#   MCR        integral  8     'b0  
+#   MSR        integral  8     'b0  
+#   LSR        integral  8     'b0  
+#   FCR        integral  8     'b110
+#   IIR        integral  8     'b0  
+#   IER        integral  8     'b1  
+#   DLL        integral  8     'd27 
+#   DLM        integral  8     'd0  
+# ----------------------------------
+# 
+# 
+# 
+# 
+# 
+#  THIS IS STEP 6 
+# 
+# 
+# 
+# 
+# UVM_INFO ../uart_agent/uart_driver.sv(57) @ 1060000: uvm_test_top.uart_envh.agnth[1].drvh [S_DRV] printing from driver 
+#  ----------------------------------------------------------------------------------------
+# Name                           Type      Size  Value                                    
+# ----------------------------------------------------------------------------------------
+# req                            uart_xtn  -     @1094                                    
+#   begin_time                   time      64    1060000                                  
+#   end_time                     time      64    1060000                                  
+#   depth                        int       32    'd2                                      
+#   parent sequence (name)       string    3     fd2                                      
+#   parent sequence (full name)  string    41    uvm_test_top.uart_envh.agnth[1].seqrh.fd2
+#   sequencer                    string    37    uvm_test_top.uart_envh.agnth[1].seqrh    
+#   wb_dat_i                     integral  8     'd28                                     
+#   wb_addr_i                    integral  3     'd0                                      
+#   wb_we_i                      integral  1     1                                        
+#   LCR                          integral  8     'b0                                      
+#   MCR                          integral  8     'b0                                      
+#   MSR                          integral  8     'b0                                      
+#   LSR                          integral  8     'b0                                      
+#   FCR                          integral  8     'b0                                      
+#   IIR                          integral  8     'b0                                      
+#   IER                          integral  8     'b0                                      
+#   DLL                          integral  8     'd0                                      
+#   DLM                          integral  8     'd0                                      
+# ----------------------------------------------------------------------------------------
+# 
+# UVM_INFO ../uart_agent/uart_monitor.sv(107) @ 1220000: uvm_test_top.uart_envh.agnth[1].monh [mon] received data 
+#  ----------------------------------
+# Name         Type      Size  Value
+# ----------------------------------
+# u_xtn        uart_xtn  -     @810 
+#   wb_dat_i   integral  8     'd28 
+#   wb_addr_i  integral  3     'd0  
+#   wb_we_i    integral  1     1    
+#   THR[0]     integral  8     'd28 
+#   LCR        integral  8     'b11 
+#   MCR        integral  8     'b0  
+#   MSR        integral  8     'b0  
+#   LSR        integral  8     'b0  
+#   FCR        integral  8     'b110
+#   IIR        integral  8     'b0  
+#   IER        integral  8     'b1  
+#   DLL        integral  8     'd27 
+#   DLM        integral  8     'd0  
+# ----------------------------------
+# 
+# 
+# 
+# 
+# 
+#  THIS IS STEP 7 
+# 
+# 
+# 
+# 
+# UVM_INFO ../uart_agent/uart_driver.sv(57) @ 1220000: uvm_test_top.uart_envh.agnth[1].drvh [S_DRV] printing from driver 
+#  ----------------------------------------------------------------------------------------
+# Name                           Type      Size  Value                                    
+# ----------------------------------------------------------------------------------------
+# req                            uart_xtn  -     @1094                                    
+#   begin_time                   time      64    1220000                                  
+#   end_time                     time      64    1220000                                  
+#   depth                        int       32    'd2                                      
+#   parent sequence (name)       string    3     fd2                                      
+#   parent sequence (full name)  string    41    uvm_test_top.uart_envh.agnth[1].seqrh.fd2
+#   sequencer                    string    37    uvm_test_top.uart_envh.agnth[1].seqrh    
+#   wb_dat_i                     integral  8     174                                      
+#   wb_addr_i                    integral  3     'd2                                      
+#   wb_we_i                      integral  1     'd0                                      
+#   LCR                          integral  8     'b0                                      
+#   MCR                          integral  8     'b0                                      
+#   MSR                          integral  8     'b0                                      
+#   LSR                          integral  8     'b0                                      
+#   FCR                          integral  8     'b0                                      
+#   IIR                          integral  8     'b0                                      
+#   IER                          integral  8     'b0                                      
+#   DLL                          integral  8     'd0                                      
+#   DLM                          integral  8     'd0                                      
+# ----------------------------------------------------------------------------------------
+# 
+# DRIVER The value IIR received from dut is 11000100
+# UVM_INFO ../uart_agent/uart_monitor.sv(107) @ 169300000: uvm_test_top.uart_envh.agnth[1].monh [mon] received data 
+#  ---------------------------------------
+# Name         Type      Size  Value     
+# ---------------------------------------
+# u_xtn        uart_xtn  -     @810      
+#   wb_dat_i   integral  8     174       
+#   wb_addr_i  integral  3     'd2       
+#   wb_we_i    integral  1     'd0       
+#   THR[0]     integral  8     'd28      
+#   LCR        integral  8     'b11      
+#   MCR        integral  8     'b0       
+#   MSR        integral  8     'b0       
+#   LSR        integral  8     'b0       
+#   FCR        integral  8     'b110     
+#   IIR        integral  8     'b11000100
+#   IER        integral  8     'b1       
+#   DLL        integral  8     'd27      
+#   DLM        integral  8     'd0       
+# ---------------------------------------
+# 
+# 
+# 
+# 
+# 
+#  THIS IS STEP 8 
+# 
+# 
+# 
+# 
+# UVM_INFO ../uart_agent/uart_driver.sv(57) @ 169300000: uvm_test_top.uart_envh.agnth[1].drvh [S_DRV] printing from driver 
+#  ----------------------------------------------------------------------------------------
+# Name                           Type      Size  Value                                    
+# ----------------------------------------------------------------------------------------
+# req                            uart_xtn  -     @1094                                    
+#   begin_time                   time      64    169300000                                
+#   end_time                     time      64    169300000                                
+#   depth                        int       32    'd2                                      
+#   parent sequence (name)       string    3     fd2                                      
+#   parent sequence (full name)  string    41    uvm_test_top.uart_envh.agnth[1].seqrh.fd2
+#   sequencer                    string    37    uvm_test_top.uart_envh.agnth[1].seqrh    
+#   wb_dat_i                     integral  8     168                                      
+#   wb_addr_i                    integral  3     'd0                                      
+#   wb_we_i                      integral  1     'd0                                      
+#   LCR                          integral  8     'b0                                      
+#   MCR                          integral  8     'b0                                      
+#   MSR                          integral  8     'b0                                      
+#   LSR                          integral  8     'b0                                      
+#   FCR                          integral  8     'b0                                      
+#   IIR                          integral  8     'b11000100                               
+#   IER                          integral  8     'b0                                      
+#   DLL                          integral  8     'd0                                      
+#   DLM                          integral  8     'd0                                      
+# ----------------------------------------------------------------------------------------
+# 
+# UVM_INFO ../uart_agent/uart_monitor.sv(107) @ 169460000: uvm_test_top.uart_envh.agnth[1].monh [mon] received data 
+#  ---------------------------------------
+# Name         Type      Size  Value     
+# ---------------------------------------
+# u_xtn        uart_xtn  -     @810      
+#   wb_dat_i   integral  8     168       
+#   wb_addr_i  integral  3     'd0       
+#   wb_we_i    integral  1     'd0       
+#   THR[0]     integral  8     'd28      
+#   RB[0]      integral  8     'd25      
+#   LCR        integral  8     'b11      
+#   MCR        integral  8     'b0       
+#   MSR        integral  8     'b0       
+#   LSR        integral  8     'b0       
+#   FCR        integral  8     'b110     
+#   IIR        integral  8     'b11000100
+#   IER        integral  8     'b1       
+#   DLL        integral  8     'd27      
+#   DLM        integral  8     'd0       
+# ---------------------------------------
+# 
+# 
+# 
+# 
+# 
+#  THIS IS STEP 9 
+# 
+# 
+# 
+# 
+# DRIVER The value IIR received from dut is 11000100
+# UVM_INFO ../uart_agent/uart_monitor.sv(107) @ 169970000: uvm_test_top.uart_envh.agnth[0].monh [mon] received data 
+#  ---------------------------------------
+# Name         Type      Size  Value     
+# ---------------------------------------
+# u_xtn        uart_xtn  -     @652      
+#   wb_dat_i   integral  8     234       
+#   wb_addr_i  integral  3     'd2       
+#   wb_we_i    integral  1     'd0       
+#   THR[0]     integral  8     'd25      
+#   LCR        integral  8     'b11      
+#   MCR        integral  8     'b0       
+#   MSR        integral  8     'b0       
+#   LSR        integral  8     'b0       
+#   FCR        integral  8     'b110     
+#   IIR        integral  8     'b11000100
+#   IER        integral  8     'b1       
+#   DLL        integral  8     'd54      
+#   DLM        integral  8     'd0       
+# ---------------------------------------
+# 
+# 
+# 
+# 
+# 
+#  THIS IS FD1 STEP 8 
+# 
+# 
+# 
+# 
+# UVM_INFO ../uart_agent/uart_driver.sv(57) @ 169970000: uvm_test_top.uart_envh.agnth[0].drvh [S_DRV] printing from driver 
+#  ----------------------------------------------------------------------------------------
+# Name                           Type      Size  Value                                    
+# ----------------------------------------------------------------------------------------
+# req                            uart_xtn  -     @1090                                    
+#   begin_time                   time      64    169970000                                
+#   end_time                     time      64    169970000                                
+#   depth                        int       32    'd2                                      
+#   parent sequence (name)       string    3     fd1                                      
+#   parent sequence (full name)  string    41    uvm_test_top.uart_envh.agnth[0].seqrh.fd1
+#   sequencer                    string    37    uvm_test_top.uart_envh.agnth[0].seqrh    
+#   wb_dat_i                     integral  8     'd22                                     
+#   wb_addr_i                    integral  3     'd0                                      
+#   wb_we_i                      integral  1     'd0                                      
+#   LCR                          integral  8     'b0                                      
+#   MCR                          integral  8     'b0                                      
+#   MSR                          integral  8     'b0                                      
+#   LSR                          integral  8     'b0                                      
+#   FCR                          integral  8     'b0                                      
+#   IIR                          integral  8     'b11000100                               
+#   IER                          integral  8     'b0                                      
+#   DLL                          integral  8     'd0                                      
+#   DLM                          integral  8     'd0                                      
+# ----------------------------------------------------------------------------------------
+# 
+# UVM_INFO ../uart_agent/uart_monitor.sv(107) @ 170050000: uvm_test_top.uart_envh.agnth[0].monh [mon] received data 
+#  ---------------------------------------
+# Name         Type      Size  Value     
+# ---------------------------------------
+# u_xtn        uart_xtn  -     @652      
+#   wb_dat_i   integral  8     'd22      
+#   wb_addr_i  integral  3     'd0       
+#   wb_we_i    integral  1     'd0       
+#   THR[0]     integral  8     'd25      
+#   RB[0]      integral  8     'd28      
+#   LCR        integral  8     'b11      
+#   MCR        integral  8     'b0       
+#   MSR        integral  8     'b0       
+#   LSR        integral  8     'b0       
+#   FCR        integral  8     'b110     
+#   IIR        integral  8     'b11000100
+#   IER        integral  8     'b1       
+#   DLL        integral  8     'd54      
+#   DLM        integral  8     'd0       
+# ---------------------------------------
+# 
+# 
+# 
+# 
+# 
+#  THIS IS FD1 STEP 9 
+# 
+# 
+# 
+# 
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 190050000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# ---------------------------------------
+# Name         Type      Size  Value     
+# ---------------------------------------
+# u_xtn        uart_xtn  -     @652      
+#   wb_dat_i   integral  8     'd22      
+#   wb_addr_i  integral  3     'd0       
+#   wb_we_i    integral  1     'd0       
+#   THR[0]     integral  8     'd25      
+#   RB[0]      integral  8     'd28      
+#   LCR        integral  8     'b11      
+#   MCR        integral  8     'b0       
+#   MSR        integral  8     'b0       
+#   LSR        integral  8     'b0       
+#   FCR        integral  8     'b110     
+#   IIR        integral  8     'b11000100
+#   IER        integral  8     'b1       
+#   DLL        integral  8     'd54      
+#   DLM        integral  8     'd0       
+# ---------------------------------------
+# ---------------------------------------
+# Name         Type      Size  Value     
+# ---------------------------------------
+# u_xtn        uart_xtn  -     @810      
+#   wb_dat_i   integral  8     168       
+#   wb_addr_i  integral  3     'd0       
+#   wb_we_i    integral  1     'd0       
+#   THR[0]     integral  8     'd28      
+#   RB[0]      integral  8     'd25      
+#   LCR        integral  8     'b11      
+#   MCR        integral  8     'b0       
+#   MSR        integral  8     'b0       
+#   LSR        integral  8     'b0       
+#   FCR        integral  8     'b110     
+#   IIR        integral  8     'b11000100
+#   IER        integral  8     'b1       
+#   DLL        integral  8     'd27      
+#   DLM        integral  8     'd0       
+# ---------------------------------------
+# The Value In The Tx FIFO in DUT1 is : 25 
+# The Value In The Tx FIFO in DUT2 is : 28 
+# The Value In The Rx FIFO in DUT1 is : 28 
+# The Value In The Rx FIFO in DUT2 is : 25 
+# The Value in DUT1 IIR is : 11000100 
+# The Value in DUT2 IIR is : 11000100 
+# 
+# full duplex is SUCCESSFULL
+# 
+# 
+# half duplex for UART 1 is SUCCESSFULL
+# 
+# 
+# half duplex for UART 2 is SUCCESSFULL
+# 
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   40
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [S_DRV]    18
+# [TEST_DONE]     1
+# [mon]    18
+# ** Note: $finish    : C:/questasim64_2024.1/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 190050 ns  Iteration: 54  Instance: /top
+# Saving coverage database on exit...
+# End time: 21:02:12 on Mar 16,2025, Elapsed time: 0:00:07
+# Errors: 0, Warnings: 2
